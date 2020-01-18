@@ -131,31 +131,31 @@ body {
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-light-webfont.woff2") format("woff2"),
-    url("neuemontreal-light-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-light-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-light-webfont.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-lightitalic-webfont.woff2") format("woff2"),
-    url("neuemontreal-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-lightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-lightitalic-webfont.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-regular-webfont.woff2") format("woff2"),
-    url("neuemontreal-regular-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-regular-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-italic-webfont.woff2") format("woff2"),
-    url("neuemontreal-italic-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-italic-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-italic-webfont.woff") format("woff");
   font-weight: 400;
   font-weight: normal;
   font-style: italic;
@@ -163,15 +163,15 @@ body {
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-bold-webfont.woff2") format("woff2"),
-    url("neuemontreal-bold-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-bold-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-bold-webfont.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Neue Montreal";
-  src: url("neuemontreal-bolditalic-webfont.woff2") format("woff2"),
-    url("neuemontreal-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/Neue Montreal/neuemontreal-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Montreal/neuemontreal-bolditalic-webfont.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
@@ -346,31 +346,12 @@ header h1 {
   position: relative;
   display: block;
   width: 80vw;
-  max-width: 80vw;
   min-height: 80vh;
   overflow: hidden;
-  background: yellow;
+  background: black;
   margin: 20vh 0;
 }
 
-.project--content {
-
-  position: sticky;
-  position: -webkit-sticky;
-  padding: 1rem 25% 1rem 1rem;
-  color: white;
-  top:30px;
-}
-
-.project--overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.432);
-  z-index: 3;
-}
 
 .video__project {
   position: absolute;
@@ -383,6 +364,29 @@ header h1 {
   transform: translate(-50%);
   /* display: none; */
 }
+
+.project--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.781);
+  z-index: 2;
+}
+
+.project--content {
+
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 1rem 25% 1rem 1rem;
+  color: white;
+  top:40vh;
+  /* background: rgba(0, 0, 0, 0.253); */
+}
+
+
+
 
 
 

@@ -1,0 +1,260 @@
+body,
+html {
+  height: 100%;
+}
+
+@font-face {
+    font-family: manrope vf;
+    src: url(../fonts/variable/ManropeGX.ttf) format("truetype-variations");
+    font-style: normal;
+    font-variation-settings: 'wght' 500;
+    font-variation-ligatures: normal;
+    font-weight: 200 800
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-ExtraLight.woff2) format("woff2");
+    font-weight: 200
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-Light.woff2) format("woff2");
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-Regular.woff2) format("woff2");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-Medium.woff2) format("woff2");
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-SemiBold.woff2) format("woff2");
+    font-weight: 600
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-Bold.woff2) format("woff2");
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/web/Manrope-ExtraBold.woff2) format("woff2");
+    font-weight: 800
+}
+
+.flex-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.split {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.split:hover #video {
+  opacity: 1;
+}
+
+.split h1 {
+  z-index: 2;
+  /* font-family: 'Space Mono', monospace; */
+  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+}
+
+.split h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* font-family: 'Space Mono', monospace; */
+  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  padding: 1em;
+  z-index: 3;
+}
+
+.split h2 a {
+  pointer-events: auto;
+  color: white;
+  text-decoration: none;
+  /* text-decoration: underline wavy rgba(255, 255, 255, 0.75);
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 1em;
+  text-decoration-skip-ink: auto;  */
+  letter-spacing: -0.05em;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.split h2 a:hover {
+  
+  
+}
+
+
+.commercial h1 {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.commercial:hover {
+  height: 80%;
+}
+
+
+.commercial:hover .personal {
+  height: 20%;
+  opacity: 0.5;
+}
+
+
+
+.personal h1 {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.personal:hover {
+  height: 80%;
+}
+
+.personal:hover .commercial {
+  height: 20%;
+  opacity: 0.5;
+}
+.commepersonalrcial:hover .commercial > #video{
+  opacity: 0!important;
+}
+
+
+#video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .split {
+    width: 50%;
+    height: 100%;
+  }
+
+  .commercial h1 {
+    top: 1em;
+    left: auto;
+    right: 1em;
+    transform: translate(0);
+  }
+
+  .commercial:hover {
+    width: 70%;
+    height: 100%;
+  }
+
+  .commercial:hover .personal {
+    width: 30%;
+    height: 100%;
+    
+  }
+
+  .commercial:hover ~ .personal > #video {
+    opacity: 0.1;
+    
+  }
+
+  .personal h1 {
+    top: 1em;
+    right: auto;
+    left: 1em;
+    transform: translate(0);
+  }
+
+  .personal:hover {
+    width: 70%;
+    height: 100%;
+  }
+
+  .personal:hover .commercial {
+    width: 30%;
+    height: 100%;
+    opacity: 0.1;
+    
+  }
+  .personal:hover ~~ .commercial > #video {
+    opacity: 0.1;
+    
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .commercial,
+  .personal {
+    width: 50%;
+    height: 100%;
+  }
+}

@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body data-barba="wrapper">
     <script src="/superhi.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
     <nav id="main">
-      <h1><span>Joris</span><span>Debeij</span></h1>
+      <h1><span><a href="index.html">Joris</a></span><span><a href="index.html">Debeij</a></span></h1>
 
       <ul class="menu">
         <li>Commercial</li>
@@ -30,7 +30,7 @@
 		  </ul> -->
     </nav>
 
-    <section class="projects">
+    <section class="projects"  data-barba="container" data-barba-namespace="home">
       <!-- project-->
       <div class="project nike">
         <div class="content">
@@ -43,5 +43,6 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/@barba/core"></script>
   </body>
 </html>

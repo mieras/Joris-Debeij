@@ -54,6 +54,22 @@ html {
     font-weight: 800
 }
 
+
+.title {
+  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+}
+
+.split__title {
+  /* font-family: 'Space Mono', monospace; */
+  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+
 .flex-wrapper {
   display: flex;
   height: 100%;
@@ -85,10 +101,7 @@ html {
 .split h1 {
   z-index: 2;
   /* font-family: 'Space Mono', monospace; */
-  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  color: white;
+
 }
 
 .split h2 {
@@ -96,10 +109,7 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* font-family: 'Space Mono', monospace; */
-  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
-  font-weight: 700;
-  font-size: 3em;
+  
   padding: 1em;
   z-index: 3;
 }
@@ -118,9 +128,7 @@ html {
 
 .split h2 a:hover {
   
-  
 }
-
 
 .commercial h1 {
   position: absolute;
@@ -138,8 +146,6 @@ html {
   height: 20%;
   opacity: 0.5;
 }
-
-
 
 .personal h1 {
   position: absolute;
@@ -160,8 +166,7 @@ html {
   opacity: 0!important;
 }
 
-
-#video {
+.video, #video {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -173,6 +178,26 @@ html {
   left: 50%;
   transform: translate(-50%);
 }
+
+/* projects */
+
+#main {
+  position: fixed;
+  top:0;
+  width:100%;
+  background:green;
+  
+}
+
+#main h1 {
+
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translate(-50%,0);
+
+}
+
 
 @media only screen and (min-width: 768px) {
   .flex-wrapper {

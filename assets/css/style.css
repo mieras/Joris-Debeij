@@ -1,74 +1,89 @@
-body,
-html {
+:root {
+  --color-black: #1e1e1e;
+  --color-white: #ffffff;
+  --base-size: 16px;
+  --duration: 0.5s;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  font-size: var(--base-size);
   height: 100%;
 }
-
 @font-face {
-    font-family: manrope vf;
-    src: url(../fonts/variable/ManropeGX.ttf) format("truetype-variations");
-    font-style: normal;
-    font-variation-settings: 'wght' 500;
-    font-variation-ligatures: normal;
-    font-weight: 200 800
+  font-family: manrope vf;
+  src: url(../fonts/variable/ManropeGX.ttf) format("truetype-variations");
+  font-style: normal;
+  font-variation-settings: "wght" 500;
+  font-variation-ligatures: normal;
+  font-weight: 200 800;
 }
 
 @font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-ExtraLight.woff2) format("woff2");
-    font-weight: 200
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-ExtraLight.woff2) format("woff2");
+  font-weight: 200;
 }
 
 @font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-Light.woff2) format("woff2");
-    font-weight: 300
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-Light.woff2) format("woff2");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-Regular.woff2) format("woff2");
-    font-weight: 400
-}
-
-@font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-Medium.woff2) format("woff2");
-    font-weight: 500
-}
-
-@font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-SemiBold.woff2) format("woff2");
-    font-weight: 600
-}
-
-@font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-Bold.woff2) format("woff2");
-    font-weight: 700
-}
-
-@font-face {
-    font-family: Manrope;
-    src: url(../fonts/web/Manrope-ExtraBold.woff2) format("woff2");
-    font-weight: 800
-}
-
-
-.title {
-  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-Regular.woff2) format("woff2");
   font-weight: 400;
-  font-size: 1em;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/web/Manrope-ExtraBold.woff2) format("woff2");
+  font-weight: 800;
+}
+
+.logo {
+  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+    helvetica neue, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* font-variation-settings: 'wght' 900; */
+  letter-spacing: -0.05em;
   color: white;
 }
 
 .split__title {
   /* font-family: 'Space Mono', monospace; */
-  font-family: manrope vf,Manrope,-apple-system,BlinkMacSystemFont,Roboto,helvetica neue,sans-serif;
+  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+    helvetica neue, sans-serif;
   font-weight: 700;
   font-size: 3em;
 }
-
 
 .flex-wrapper {
   display: flex;
@@ -94,14 +109,12 @@ html {
   pointer-events: none;
 }
 
-.split:hover #video {
+.split:hover .video {
   opacity: 1;
 }
 
 .split h1 {
   z-index: 2;
-  /* font-family: 'Space Mono', monospace; */
-
 }
 
 .split h2 {
@@ -109,7 +122,7 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  
+
   padding: 1em;
   z-index: 3;
 }
@@ -127,7 +140,6 @@ html {
 }
 
 .split h2 a:hover {
-  
 }
 
 .commercial h1 {
@@ -140,7 +152,6 @@ html {
 .commercial:hover {
   height: 80%;
 }
-
 
 .commercial:hover .personal {
   height: 20%;
@@ -162,17 +173,20 @@ html {
   height: 20%;
   opacity: 0.5;
 }
-.commepersonalrcial:hover .commercial > #video{
-  opacity: 0!important;
+.commepersonalrcial:hover .commercial > #video {
+  opacity: 0 !important;
 }
 
-.video, #video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.video {
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
+}
+
+.video__split {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   opacity: 0.4;
   transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   left: 50%;
@@ -181,23 +195,86 @@ html {
 
 /* projects */
 
-#main {
+header {
   position: fixed;
-  top:0;
-  width:100%;
-  background:green;
-  
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.425);
+  padding: 0em;
+  z-index: 5;
 }
 
-#main h1 {
-
+header h1 {
   position: absolute;
   top: 1em;
   left: 50%;
-  transform: translate(-50%,0);
-
+  transform: translate(-50%, 0);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+}
+
+.project {
+  position: relative;
+  display: block;
+  width: 80vw;
+  max-width: 80vw;
+  min-height: 60vh;
+  overflow: hidden;
+  background: yellow;
+}
+
+.video__project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  min-width: 100%;
+  height: 100%;
+  /* display: none; */
+}
+
+.project--content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding:1rem 25% 1rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 3;
+}
+
+.project--year {
+  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  /* font-variation-settings: 'wght' 900; */
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+
+.project--title {
+  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  /* font-variation-settings: 'wght' 900; */
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+
+.project--links--item {
+  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  color:#fff;
+}
+
+.project--links--item__underline {
+  text-decoration:none;
+}
 
 @media only screen and (min-width: 768px) {
   .flex-wrapper {
@@ -231,12 +308,10 @@ html {
   .commercial:hover .personal {
     width: 30%;
     height: 100%;
-    
   }
 
   .commercial:hover ~ .personal > #video {
     opacity: 0.1;
-    
   }
 
   .personal h1 {
@@ -255,11 +330,9 @@ html {
     width: 30%;
     height: 100%;
     opacity: 0.1;
-    
   }
-  .personal:hover ~~ .commercial > #video {
+  .personal:hover~~.commercial > #video {
     opacity: 0.1;
-    
   }
 }
 

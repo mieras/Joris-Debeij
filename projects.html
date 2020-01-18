@@ -15,37 +15,56 @@
       href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
-    <nav id="main">
-      <h1><span><a href="index.html">Joris</a></span><span><a href="index.html">Debeij</a></span></h1>
 
-      <ul class="menu">
-        <li>Commercial</li>
-        <li>Personal</li>
-      </ul>
-    </nav>
+    <header class="header">
 
-    <nav id="social">
-      <!-- <ul class="menu">
-			<li>Facebook</li><li>Instagram</li>
-		  </ul> -->
-    </nav>
+      <div class="brand">
+        <h1 class="logo">
+          <a href="index.html">
+            <span class="logo--part logo--part__left">Joris</span>
+            <span class="logo--part logo--part__right">Debeij</span>
+          </a>
+        </h1>
+      </div>
+
+      <nav class="navigation" role="navigation">
+        <ul class="mainnav">
+          <li class="mainnav--item mainnav--item__underline">Commercial</li>
+          <li class="mainnav--item mainnav--item__underline">Personal</li>
+        </ul>
+      </nav>
+
+      <nav class="navigation" role="navigation">
+        <ul class="mainnav">
+          <li class="mainnav--item mainnav--item__underline">Facebook</li>
+          <li class="mainnav--item mainnav--item__underline">Instagram</li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+
 
     <section class="projects"  data-barba="container" data-barba-namespace="home">
       <!-- project-->
       <div class="project nike">
-        <div class="content">
-          <p class="year">2019</p>
-          <h1>Name</h1>
-          <div class="buttons">
-            <a href="#">play</a>
-            <a href="#">info</a>
+        <div class="project--content">
+          <p class="project--year">2019</p>
+          <h1 class="project--title">Name</h1>
+          <div class="project--links">
+            <a class="project--links--item project--links--item__underline" href="#">play</a>
+            <a class="project--links--item project--links--item__underline" href="#">info</a>
           </div>
-          <video playsinline autoplay muted loop id="video">
-		        <source src="assets/videos/project-01.mp4" type="video/mp4" />
-		      </video>
         </div>
+        
+        <video playsinline autoplay muted loop id="video" class="video__project">
+          <source src="assets/videos/project-01.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
+
+
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="assets/js/scripts.js"></script>
   </body>

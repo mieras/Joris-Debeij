@@ -17,7 +17,7 @@ body {
 }
 @font-face {
   font-family: manrope vf;
-  src: url(../fonts/variable/ManropeGX.ttf) format("truetype-variations");
+  src: url(../fonts/Manrope/variable/ManropeGX.ttf) format("truetype-variations");
   font-style: normal;
   font-variation-settings: "wght" 500;
   font-variation-ligatures: normal;
@@ -26,43 +26,43 @@ body {
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-ExtraLight.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-ExtraLight.woff2) format("woff2");
   font-weight: 200;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-Light.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-Light.woff2) format("woff2");
   font-weight: 300;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-Regular.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-Regular.woff2) format("woff2");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-Medium.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-Medium.woff2) format("woff2");
   font-weight: 500;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-SemiBold.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-SemiBold.woff2) format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-Bold.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-Bold.woff2) format("woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Manrope;
-  src: url(../fonts/web/Manrope-ExtraBold.woff2) format("woff2");
+  src: url(../fonts/Manrope/web/Manrope-ExtraBold.woff2) format("woff2");
   font-weight: 800;
 }
 
@@ -215,7 +215,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 20vh;
 }
 
 .project {
@@ -226,6 +226,7 @@ header h1 {
   min-height: 60vh;
   overflow: hidden;
   background: yellow;
+  margin-bottom:20vh;
 }
 
 .video__project {
@@ -233,8 +234,8 @@ header h1 {
   top: 0;
   left: 0;
   opacity: 1;
-  min-width: 100%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   /* display: none; */
 }
 

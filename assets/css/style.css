@@ -3,6 +3,8 @@
   --color-white: #ffffff;
   --base-size: 16px;
   --duration: 0.5s;
+  --type-primary: Neue Machina;
+  --type-primary: Neue Machina;
 }
 
 * {
@@ -17,7 +19,8 @@ body {
 }
 @font-face {
   font-family: manrope vf;
-  src: url(../fonts/Manrope/variable/ManropeGX.ttf) format("truetype-variations");
+  src: url(../fonts/Manrope/variable/ManropeGX.ttf)
+    format("truetype-variations");
   font-style: normal;
   font-variation-settings: "wght" 500;
   font-variation-ligatures: normal;
@@ -66,8 +69,112 @@ body {
   font-weight: 800;
 }
 
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff") format("woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-light-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-light-webfont.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-regular-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-medium-webfont.woff2") format("woff2"),
+      url("../fonts/Neue Machina/neuemachina-medium-webfont.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-bold-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-bold-webfont.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url("../fonts/Neue Machina/neuemachina-black-webfont.woff2") format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-black-webfont.woff") format("woff");
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-bold-webfont.woff2') format('woff2'),
+       url('neuemontreal-bold-webfont.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-bolditalic-webfont.woff2') format('woff2'),
+       url('neuemontreal-bolditalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-italic-webfont.woff2') format('woff2'),
+       url('neuemontreal-italic-webfont.woff') format('woff');
+  font-weight: 400;
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-light-webfont.woff2') format('woff2'),
+       url('neuemontreal-light-webfont.woff') format('woff');
+  font-weight: 300;
+
+
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-lightitalic-webfont.woff2') format('woff2'),
+       url('neuemontreal-lightitalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-regular-webfont.woff2') format('woff2'),
+       url('neuemontreal-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-weight: normal;
+
+}
+
 .logo {
-  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
     helvetica neue, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -78,8 +185,8 @@ body {
 }
 
 .split__title {
-  /* font-family: 'Space Mono', monospace; */
-  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto,
+
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
     helvetica neue, sans-serif;
   font-weight: 700;
   font-size: 3em;
@@ -226,7 +333,7 @@ header h1 {
   min-height: 60vh;
   overflow: hidden;
   background: yellow;
-  margin-bottom:20vh;
+  margin-bottom: 20vh;
 }
 
 .video__project {
@@ -244,14 +351,15 @@ header h1 {
   bottom: 0;
   width: 100%;
   left: 0;
-  padding:1rem 25% 1rem 1rem;
+  padding: 1rem 25% 1rem 1rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   z-index: 3;
 }
 
 .project--year {
-  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
+    helvetica neue, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   /* font-variation-settings: 'wght' 900; */
@@ -260,7 +368,8 @@ header h1 {
 }
 
 .project--title {
-  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
+    helvetica neue, sans-serif;
   font-size: 3rem;
   font-weight: 900;
   /* font-variation-settings: 'wght' 900; */
@@ -269,12 +378,13 @@ header h1 {
 }
 
 .project--links--item {
-  font-family: manrope vf, Manrope, -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  color:#fff;
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
+    helvetica neue, sans-serif;
+  color: #fff;
 }
 
 .project--links--item__underline {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {

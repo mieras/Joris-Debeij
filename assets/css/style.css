@@ -70,22 +70,26 @@ body {
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff") format("woff");
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff")
+      format("woff");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-light-webfont.woff2") format("woff2"),
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-light-webfont.woff2")
+      format("woff2"),
     url("../fonts/Neue Machina/neuemachina-light-webfont.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-regular-webfont.woff2") format("woff2"),
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-regular-webfont.woff2")
+      format("woff2"),
     url("../fonts/Neue Machina/neuemachina-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-weight: normal;
@@ -93,88 +97,101 @@ body {
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-medium-webfont.woff2") format("woff2"),
-      url("../fonts/Neue Machina/neuemachina-medium-webfont.woff") format("woff");
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-medium-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-medium-webfont.woff") format("woff");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-bold-webfont.woff2") format("woff2"),
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-bold-webfont.woff2")
+      format("woff2"),
     url("../fonts/Neue Machina/neuemachina-bold-webfont.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff") format("woff");
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff")
+      format("woff");
   font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Neue Machina';
-  src: url("../fonts/Neue Machina/neuemachina-black-webfont.woff2") format("woff2"),
+  font-family: "Neue Machina";
+  src: url("../fonts/Neue Machina/neuemachina-black-webfont.woff2")
+      format("woff2"),
     url("../fonts/Neue Machina/neuemachina-black-webfont.woff") format("woff");
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-light-webfont.woff2") format("woff2"),
+    url("neuemontreal-light-webfont.woff") format("woff");
+  font-weight: 300;
+}
 
 @font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-bold-webfont.woff2') format('woff2'),
-       url('neuemontreal-bold-webfont.woff') format('woff');
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-lightitalic-webfont.woff2") format("woff2"),
+    url("neuemontreal-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-regular-webfont.woff2") format("woff2"),
+    url("neuemontreal-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-italic-webfont.woff2") format("woff2"),
+    url("neuemontreal-italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-bold-webfont.woff2") format("woff2"),
+    url("neuemontreal-bold-webfont.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-bolditalic-webfont.woff2') format('woff2'),
-       url('neuemontreal-bolditalic-webfont.woff') format('woff');
+  font-family: "Neue Montreal";
+  src: url("neuemontreal-bolditalic-webfont.woff2") format("woff2"),
+    url("neuemontreal-bolditalic-webfont.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-italic-webfont.woff2') format('woff2'),
-       url('neuemontreal-italic-webfont.woff') format('woff');
-  font-weight: 400;
-  font-weight: normal;
-  font-style: italic;
+/* BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM  */
 
-}
+/* BLOCK
+A functionally independent page component that can be reused. In HTML, blocks are represented by the class attribute.  The block name describes its purpose ("What is it?" — menu or button) */
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-light-webfont.woff2') format('woff2'),
-       url('neuemontreal-light-webfont.woff') format('woff');
-  font-weight: 300;
+/* ELEMENT
+A composite part of a block that can't be used separately from it. The element name describes its purpose ("What is this?" — item, text, etc.), */
 
+/* MODIFIER
+An entity that defines the appearance, state, or behavior of a block or element.
+The modifier name describes its appearance ("What size?" or "Which theme?" and so on — size_s or theme_islands), its state ("How is it different from the others?" — disabled, focused, etc.) and its behavior ("How does it behave?" or "How does it respond to the user?" — such as directions_left-top).The modifier name is separated from the block or element name by a single underscore (_).
+*/
 
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-lightitalic-webfont.woff2') format('woff2'),
-       url('neuemontreal-lightitalic-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-
-}
-
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('neuemontreal-regular-webfont.woff2') format('woff2'),
-       url('neuemontreal-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-weight: normal;
-
-}
 
 .logo {
-  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
+  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto,
     helvetica neue, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -185,8 +202,7 @@ body {
 }
 
 .split__title {
-
-  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
+  font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto,
     helvetica neue, sans-serif;
   font-weight: 700;
   font-size: 3em;
@@ -319,10 +335,11 @@ header h1 {
 }
 
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20vh;
+  /* padding-top: 10vh; */
 }
 
 .project {
@@ -330,10 +347,29 @@ header h1 {
   display: block;
   width: 80vw;
   max-width: 80vw;
-  min-height: 60vh;
+  min-height: 80vh;
   overflow: hidden;
   background: yellow;
-  margin-bottom: 20vh;
+  margin: 20vh 0;
+}
+
+.project--content {
+
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 1rem 25% 1rem 1rem;
+  color: white;
+  top:30px;
+}
+
+.project--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.432);
+  z-index: 3;
 }
 
 .video__project {
@@ -341,46 +377,37 @@ header h1 {
   top: 0;
   left: 0;
   opacity: 1;
-  width: 100%;
-  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
   /* display: none; */
 }
 
-.project--content {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  padding: 1rem 25% 1rem 1rem;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  z-index: 3;
-}
+
 
 .project--year {
-  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
-    helvetica neue, sans-serif;
+  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
-  /* font-variation-settings: 'wght' 900; */
+  font-weight: 300;
   letter-spacing: -0.05em;
   color: #fff;
 }
 
 .project--title {
-  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
-    helvetica neue, sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  /* font-variation-settings: 'wght' 900; */
-  letter-spacing: -0.05em;
+  font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   color: #fff;
 }
 
 .project--links--item {
-  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto,
-    helvetica neue, sans-serif;
+  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-weight: 400;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 .project--links--item__underline {
@@ -445,7 +472,15 @@ header h1 {
   .personal:hover~~.commercial > #video {
     opacity: 0.1;
   }
-}
+
+  .video__project {
+    height:100%;
+    width: auto;
+    
+    
+  }
+
+
 
 @media only screen and (min-width: 1920px) {
   .flex-wrapper {
@@ -467,3 +502,19 @@ header h1 {
     height: 100%;
   }
 }
+
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video__project {
+    width: 100%;
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video__project { 
+      width:auto;
+      height: 100%;
+  }

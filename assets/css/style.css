@@ -191,15 +191,7 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
 */
 
 
-.logo {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  font-weight: 900;
-  /* font-variation-settings: 'wght' 900; */
-  letter-spacing: -0.05em;
-  color: white;
-}
+
 
 .split__title {
   font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
@@ -244,7 +236,6 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   padding: 1em;
   z-index: 3;
 }
@@ -295,9 +286,7 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
   height: 20%;
   opacity: 0.5;
 }
-.commepersonalrcial:hover .commercial > #video {
-  opacity: 0 !important;
-}
+
 
 .video {
   min-width: 100%;
@@ -317,39 +306,46 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
 
 /* projects */
 
+header .brand {
+  widows: 100%;
+  height: 100%;
+}
+
+header .logo {
+  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* font-variation-settings: 'wght' 900; */
+  letter-spacing: -0.02em;
+  color: white;
+  position: absolute;
+}
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.425);
-  padding: 0em;
-  z-index: 5;
+  padding: 0;
+  z-index: 0;
+  height:100%;
 }
 
-header h1 {
-  position: absolute;
-  top: 1em;
-  left: 50%;
-  transform: translate(-50%, 0);
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
 }
 
-header .mainnav--item {
+header .mainnav {
   font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
   font-weight: 700;
+  font-size: 0.75rem;
   color:white;
   position: absolute;
+  right: 10vw;
+  bottom: 1.5em;
 }
-
-header .mainnav--item__left {
-  left: 1em;
-  top: 1em;
-}
-
-header .mainnav--item__right {
-  right: 1em;
-  top: 1em;
-}
-
 
 .projects {
   position: relative;
@@ -357,40 +353,37 @@ header .mainnav--item__right {
   flex-direction: column;
   align-items: center;
   /* padding-top: 10vh; */
+  margin-bottom:20vh;
 }
 
 .project {
   position: relative;
   display: block;
   width: 80vw;
-  min-height: 80vh;
+  min-height: 60vh;
   /* overflow: hidden;   */
   background: black;
-  margin: 10vh 0;
+  margin: 20vh 0;
   pointer-events: none;
 }
 
 .project:hover .project--overlay  {
   background: rgba(0, 0, 0, 0.2);
 }
-.project:hover .video__project  {
-  transform-origin: center;
-  transform: scale(1.2) translate(-40%);
-  
-}
+
 
 .project .project--content {
   pointer-events: auto;
 }
 
 .project--content {
-
   position: sticky;
   position: -webkit-sticky;
-  padding: 1rem 25% 1rem 1rem;
+  padding: 2rem 25% 2rem 2rem;
   color: white;
   top:75vh;
 }
+
 .project--overlay {
   position: absolute;
   top: 0;
@@ -409,7 +402,6 @@ header .mainnav--item__right {
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
 
 .video__project {
@@ -421,38 +413,31 @@ header .mainnav--item__right {
   height: 100%;
   left: 50%;
   transform: translate(-50%);
-  transition: opacity 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
-  transition: transform 3.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
-  
-  
 }
-
-
-
-
 
 .project--year {
   font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
   font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: -0.05em;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
   color: #fff;
 }
 
 .project--title {
   font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 1.2;
+  line-height: 1;
   color: #fff;
 }
 
 .project--links--item {
   font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-weight: 400;
-  color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right:0.5rem;
+  color: #fff;  
 }
 
 .project--links--item__underline {
@@ -479,7 +464,7 @@ header .mainnav--item__right {
   .commercial h1 {
     top: 1em;
     left: auto;
-    right: 1em;
+    right: 0.5em;
     transform: translate(0);
   }
 
@@ -493,14 +478,10 @@ header .mainnav--item__right {
     height: 100%;
   }
 
-  .commercial:hover ~ .personal > #video {
-    opacity: 0.1;
-  }
-
   .personal h1 {
     top: 1em;
     right: auto;
-    left: 1em;
+    left: 0.5em;
     transform: translate(0);
   }
 
@@ -514,18 +495,76 @@ header .mainnav--item__right {
     height: 100%;
     opacity: 0.1;
   }
-  .personal:hover~~.commercial > #video {
-    opacity: 0.1;
+
+  .logo {
+  
+    /* font-weight: 900; */
+    font-size:9rem;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  
+   
+
+  header .mainnav--item {
+    
+    font-size: 1rem;
+  }
+
+  .project {
+    width: 80vw;
+    min-height: 60vh;
+    margin: 20vh 0;
+  }
+
+  .project:hover .project--overlay  {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  
+
+  .project--content {
+    padding: 2rem 25% 2rem 2rem;
+    top:55vh;
+  }
+
+  .project--year {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+  }
+  
+  .project--title {
+    font-size: 5rem;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  
+  .project--links--item {
+    font-size: 1.5rem;
+    margin-right:0.75rem;
   }
 
   .video__project {
     height:100%;
-    width: auto;
-    
-    
+    width: auto;    
   }
 
-
+  .video__project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    min-width: 100%;
+    height: 100%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
+    /* transition: transform 3.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s; */
+  }
 
 @media only screen and (min-width: 1920px) {
   .flex-wrapper {
@@ -551,7 +590,7 @@ header .mainnav--item__right {
 
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio:16/9) {
   .video__project {
     width: 100%;
     height:auto;

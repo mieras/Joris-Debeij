@@ -193,11 +193,18 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
 
 
 
-.split__title {
+.split--title {
   font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
   font-weight: 700;
   font-size: 3em;
+  color:white;
 }
+
+.logo__small .logo--part{
+font-size:1rem;
+top:1rem;
+}
+
 
 .flex-wrapper {
   display: flex;
@@ -306,21 +313,6 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
 
 /* projects */
 
-header .brand {
-  widows: 100%;
-  height: 100%;
-}
-
-header .logo {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  font-weight: 900;
-  /* font-variation-settings: 'wght' 900; */
-  letter-spacing: -0.02em;
-  color: white;
-  position: absolute;
-}
 
 header {
   position: fixed;
@@ -329,6 +321,23 @@ header {
   padding: 0;
   z-index: 0;
   height:100%;
+}
+
+header .brand {
+  widows: 100%;
+  height: 100%;
+}
+
+
+.logo {
+  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* font-variation-settings: 'wght' 900; */
+  letter-spacing: -0.02em;
+  color: white;
+  position: absolute;
 }
 
 
@@ -461,6 +470,16 @@ header .mainnav {
     height: 100%;
   }
 
+  .split .logo {
+    font-size:2rem;
+  }
+
+  .logo__small .logo--part{
+    
+    top:1rem;
+    }
+    
+
   .commercial h1 {
     top: 1em;
     left: auto;
@@ -496,13 +515,15 @@ header .mainnav {
     opacity: 0.1;
   }
 
-  .logo {
+  .brand {width: 100%;}
+   .logo {
   
     /* font-weight: 900; */
     font-size:9rem;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%); 
+    width: 100%;
   }
 
   

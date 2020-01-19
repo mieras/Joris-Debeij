@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="SuperHi" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joris Debeij</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-barba="wrapper">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet"/> -->
+    <header class="header">
+      <div class="brand">
+        <h1 class="logo">
+          <a href="index.html">
+            <span class="logo--part logo--part__left">Joris</span>
+            <span class="logo--part logo--part__right">Debeij</span>
+          </a>
+        </h1>
+      </div>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="SuperHi" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joris Debeij</title>
-  <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+      <nav class="navigation" role="navigation">
+        <ul class="mainnav">
+          <li class="mainnav--item mainnav--item__underline mainnav--item__left">Commercial</li>
+          <li class="mainnav--item mainnav--item__underline mainnav--item__right">Personal</li>
+        </ul>
+      </nav>
 
-<body data-barba="wrapper">
-  <!-- BEM -->
-  <header class="header">
-    <div class="brand">
-      <h1 class="logo">
-        <a href="index.html">
-          <span class="logo--part logo--part__left">Joris</span>
-          <span class="logo--part logo--part__right">Debeij</span>
-        </a>
-      </h1>
-    </div>
-    <nav class="navigation" role="navigation">
-      <ul class="mainnav">
-        <li class="mainnav--item mainnav--item__underline">Commercial</li>
-        <li class="mainnav--item mainnav--item__underline">Personal</li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="navigation" role="navigation">
+        <ul class="mainnav">
+          <li class="mainnav--item mainnav--item__underline mainnav--item__facebook">Facebook</li>
+          <li class="mainnav--item mainnav--item__underline mainnav--item__instagram">Instagram</li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="projects" data-barba="container" data-barba-namespace="home">
-    <!-- project-->
-    <div class="project nike">
-      <div class="content">
-        <p class="year">2019</p>
-        <h1>Name</h1>
-        <div class="buttons">
-          <a href="#">play</a>
-          <a href="#">info</a>
+    <section class="projects" data-barba="container" data-barba-namespace="home">
+      <!-- project-->
+      <div class="project nike">
+        <div class="project--overlay">
+          <div class="project--content">
+            <p class="project--year">2019</p>
+            <h1 class="project--title">Name</h1>
+            <div class="project--links">
+              <a class="project--links--item project--links--item__underline" href="#">play</a>
+              <a class="project--links--item project--links--item__underline" href="#">info</a>
+            </div>
+          </div>
+        </div>
+        <div class="project--video-container">
+          <video playsinline autoplay muted loop id="video" class="video__project">
+            <source src="assets/videos/project-01.mp4" type="video/mp4" />
+          </video>
         </div>
         <video playsinline autoplay muted loop id="video">
           <source src="assets/videos/project-01.mp4" type="video/mp4" />
         </video>
       </div>
-    </div>
-  </section>
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="assets/js/scripts.js"></script>
-</body>
 
+      <!-- project-->
+      <div class="project nike">
+        <div class="project--overlay">
+          <div class="project--content">
+            <p class="project--year">2019</p>
+            <h1 class="project--title">Name</h1>
+            <div class="project--links">
+              <a class="project--links--item project--links--item__underline" href="#">play</a>
+              <a class="project--links--item project--links--item__underline" href="#">info</a>
+            </div>
+          </div>
+        </div>
+        <div class="project--video-container">
+          <video playsinline autoplay muted loop id="video" class="video__project">
+            <source src="assets/videos/project-02.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <!-- project-->
+      <div class="project nike">
+        <div class="project--overlay">
+          <div class="project--content">
+            <p class="project--year">2019</p>
+            <h1 class="project--title">Name</h1>
+            <div class="project--links">
+              <a class="project--links--item project--links--item__underline" href="#">play</a>
+              <a class="project--links--item project--links--item__underline" href="#">info</a>
+            </div>
+          </div>
+        </div>
+        <div class="project--video-container">
+          <video playsinline autoplay muted loop id="video" class="video__project">
+            <source src="assets/videos/project-03.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>

@@ -1,104 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="SuperHi" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Joris Debeij</title>
-    <link rel="stylesheet" href="assets/css/base.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body data-barba="wrapper">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet"/> -->
-    <header class="header">
-      <div class="brand">
+
+<head>
+  <meta charset="utf-8">=
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joris Debeij</title>
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="view view__projects">
+
+      <!-- Header -->
+      <header class="header">
         <h1 class="logo">
-          <a href="index.html">
-            <span class="logo--part logo--part__left">Joris</span>
-            <span class="logo--part logo--part__right">Debeij</span>
+          <a href="/">
+            <span class="logo--split logo--split__left">Joris</span>
+            <span class="logo--split logo--split__right">Debeij</span>
           </a>
         </h1>
-      </div>
+      </header>
 
+      <!-- Navigation -->
       <nav class="navigation" role="navigation">
-        <ul class="mainnav">
-          <li class="mainnav--item mainnav--item__underline mainnav--item__left">Commercial</li>
-          <li class="mainnav--item mainnav--item__underline mainnav--item__right">Personal</li>
+        <ul class="sitenav">
+          <li class="sitenav--item sitenav--split__left">
+            <a href="projects.html/#commercial">Commercial</a>
+          </li>
+          <li class="sitenav--item sitenav--split__right">
+            <a href="projects.html/#personal">Personal</a>
+          </li>
+        </ul>
+        <ul class="socialnav">
+          <li class="socialnav--item socialnav--split__left">
+            <a href="https://facebook.com">Facebook</a>
+          </li>
+          <li class="socialnav--item socialnav--split__right">
+            <a href="https://instagram.com">Instagram</a>
+          </li>
         </ul>
       </nav>
 
-      <nav class="navigation" role="navigation">
-        <ul class="mainnav">
-          <li class="mainnav--item mainnav--item__underline mainnav--item__facebook">Facebook</li>
-          <li class="mainnav--item mainnav--item__underline mainnav--item__instagram">Instagram</li>
-        </ul>
-      </nav>
-    </header>
+      <!-- Projects -->
+      <section class="projects">
 
-    <section class="projects" data-barba="container" data-barba-namespace="home">
-      <!-- project-->
-      <div class="project nike">
-        <div class="project--overlay">
-          <div class="project--content">
-            <p class="project--year">2019</p>
-            <h1 class="project--title">Name</h1>
-            <div class="project--links">
-              <a class="project--links--item project--links--item__underline" href="#">play</a>
-              <a class="project--links--item project--links--item__underline" href="#">info</a>
+        <!-- project-->
+        <div class="project project__nike">
+          <div class="project--overlay">
+            <div class="project--content">
+              <p class="project--year">2019</p>
+              <h1 class="project--title">Reef</h1>
+              <div class="project--controls">
+                <a class="project--control project--control__play" href="#">play</a>
+                <a class="project--control project--control__info" href="#">info</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project--video-container">
-          <video playsinline autoplay muted loop id="video" class="video__project">
-            <source src="assets/videos/project-01.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <video playsinline autoplay muted loop id="video">
-          <source src="assets/videos/project-01.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <!-- project-->
-      <div class="project nike">
-        <div class="project--overlay">
-          <div class="project--content">
-            <p class="project--year">2019</p>
-            <h1 class="project--title">Name</h1>
-            <div class="project--links">
-              <a class="project--links--item project--links--item__underline" href="#">play</a>
-              <a class="project--links--item project--links--item__underline" href="#">info</a>
-            </div>
+          <div class="project--videowrapper">
+            <video class="project--video" playsinline autoplay muted loop>
+              <source src="assets/videos/project-01.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
-        <div class="project--video-container">
-          <video playsinline autoplay muted loop id="video" class="video__project">
-            <source src="assets/videos/project-02.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
 
-      <!-- project-->
-      <div class="project nike">
-        <div class="project--overlay">
-          <div class="project--content">
-            <p class="project--year">2019</p>
-            <h1 class="project--title">Name</h1>
-            <div class="project--links">
-              <a class="project--links--item project--links--item__underline" href="#">play</a>
-              <a class="project--links--item project--links--item__underline" href="#">info</a>
+        <!-- project-->
+        <div class="project project__one">
+          <div class="project--overlay">
+            <div class="project--content">
+              <p class="project--year">2019</p>
+              <h1 class="project--title">Jeep</h1>
+              <div class="project--controls">
+                <a class="project--control project--control__play" href="#">play</a>
+                <a class="project--control project--control__info" href="#">info</a>
+              </div>
             </div>
           </div>
+          <div class="project--videowrapper">
+            <video class="project--video" playsinline autoplay muted loop>
+              <source src="assets/videos/project-02.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-        <div class="project--video-container">
-          <video playsinline autoplay muted loop id="video" class="video__project">
-            <source src="assets/videos/project-03.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </section>
 
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+        <!-- project-->
+        <div class="project project__two">
+          <div class="project--overlay">
+            <div class="project--content">
+              <p class="project--year">2019</p>
+              <h1 class="project--title">Pearl</h1>
+              <div class="project--controls">
+                <a class="project--control project--control__play" href="#">play</a>
+                <a class="project--control project--control__info" href="#">info</a>
+              </div>
+            </div>
+          </div>
+          <div class="project--videowrapper">
+            <video class="project--video" playsinline autoplay muted loop>
+              <source src="assets/videos/project-03.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</body>
+
 </html>

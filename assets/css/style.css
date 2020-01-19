@@ -1,220 +1,228 @@
+/* Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset end */
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --base-size: 16px;
   --duration: 0.5s;
-  --type-primary: Neue Machina;
-  --type-primary: Neue Machina;
+  --type-primary: 'Neue Machina';
 }
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-white);
 }
 
 html,
 body {
-  font-size: var(--base-size);
   height: 100%;
+  font-size: var(--base-size);
   background: var(--color-black);
 }
-@font-face {
-  font-family: manrope vf;
-  src: url(../fonts/Manrope/variable/ManropeGX.ttf)
-    format("truetype-variations");
-  font-style: normal;
-  font-variation-settings: "wght" 500;
-  font-variation-ligatures: normal;
-  font-weight: 200 800;
+
+.app,
+.view {
+  height: 100%;
 }
 
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-ExtraLight.woff2) format("woff2");
-  font-weight: 200;
+/* =========== HOME PAGE ========== */
+
+/* Header */
+.header {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-Light.woff2) format("woff2");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-Regular.woff2) format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-Medium.woff2) format("woff2");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-SemiBold.woff2) format("woff2");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-Bold.woff2) format("woff2");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Manrope;
-  src: url(../fonts/Manrope/web/Manrope-ExtraBold.woff2) format("woff2");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-ultralight-webfont.woff")
-      format("woff");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-light-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-light-webfont.woff") format("woff");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-regular-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-regular-webfont.woff") format("woff");
-  font-weight: 400;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-medium-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-medium-webfont.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-bold-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-bold-webfont.woff") format("woff");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-ultrabold-webfont.woff")
-      format("woff");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Neue Machina";
-  src: url("../fonts/Neue Machina/neuemachina-black-webfont.woff2")
-      format("woff2"),
-    url("../fonts/Neue Machina/neuemachina-black-webfont.woff") format("woff");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-light-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-light-webfont.woff") format("woff");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-lightitalic-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-lightitalic-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-regular-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-regular-webfont.woff") format("woff");
-  font-weight: 400;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-italic-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-italic-webfont.woff") format("woff");
-  font-weight: 400;
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-bold-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-bold-webfont.woff") format("woff");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Neue Montreal";
-  src: url("../fonts/Neue Montreal/neuemontreal-bolditalic-webfont.woff2") format("woff2"),
-    url("../fonts/Neue Montreal/neuemontreal-bolditalic-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-
-/* BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM BEM  */
-
-/* BLOCK
-A functionally independent page component that can be reused. In HTML, blocks are represented by the class attribute.  The block name describes its purpose ("What is it?" — menu or button) */
-
-/* ELEMENT
-A composite part of a block that can't be used separately from it. The element name describes its purpose ("What is this?" — item, text, etc.), */
-
-/* MODIFIER
-An entity that defines the appearance, state, or behavior of a block or element.
-The modifier name describes its appearance ("What size?" or "Which theme?" and so on — size_s or theme_islands), its state ("How is it different from the others?" — disabled, focused, etc.) and its behavior ("How does it behave?" or "How does it respond to the user?" — such as directions_left-top).The modifier name is separated from the block or element name by a single underscore (_).
-*/
-
 
 .logo {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  height: 100%;
+  font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue,
+    sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   font-weight: 900;
-  /* font-variation-settings: 'wght' 900; */
-  letter-spacing: -0.05em;
-  color: white;
+  letter-spacing: -0.015em;
+}
+.logo a {
+  color: var(--color-white);
+  text-decoration: none;
 }
 
-.split__title {
-  font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-weight: 700;
-  font-size: 3em;
+.logo--split {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.logo--split__left {
+  top: 45%;
+}
+.logo--split__right {
+  bottom: 45%;
 }
 
-.flex-wrapper {
+/* Cover */
+.cover {
   display: flex;
   height: 100%;
   width: 100%;
 }
 
-.flex-container {
-  background: black;
+.cover--splitscreen {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -231,132 +239,113 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
   pointer-events: none;
 }
 
-.split:hover .video {
+.split__commercial {
+  background: var(--color-black);
+}
+
+.split__commercial:hover {
+  height: 80%;
+}
+
+.split__commercial:hover .split__personal {
+  height: 20%;
+  opacity: 0.5;
+}
+
+.split__personal:hover {
+  height: 80%;
+}
+
+.split__personal:hover .split__commercial {
+  height: 20%;
+  opacity: 0.5;
+}
+
+.split__personal {
+  background: var(--color-black);
+}
+
+.split--video {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+
+  transform: translate(-50%);
+  transition: opacity 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.split:hover .split--video {
   opacity: 1;
 }
 
-.split h1 {
-  z-index: 2;
-}
+.split--title {
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
 
-.split h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-
   padding: 1em;
   z-index: 3;
+  transform: translate(-50%, -50%);
 }
 
-.split h2 a {
+.split--title a {
   pointer-events: auto;
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
-  /* text-decoration: underline wavy rgba(255, 255, 255, 0.75);
-  text-decoration-thickness: 0.2rem;
-  text-underline-offset: 1em;
-  text-decoration-skip-ink: auto;  */
   letter-spacing: -0.05em;
   transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.split h2 a:hover {
+.split--title a:hover {
+  color: var(--color-white);
+  text-decoration: none;
 }
 
-.commercial h1 {
-  position: absolute;
-  bottom: 1em;
-  left: 50%;
-  transform: translate(-50%);
+/* =========== PROJECTS ========== */
+
+.navigation {
 }
 
-.commercial:hover {
-  height: 80%;
+.sitenav {
 }
 
-.commercial:hover .personal {
-  height: 20%;
-  opacity: 0.5;
-}
-
-.personal h1 {
-  position: absolute;
-  top: 1em;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.personal:hover {
-  height: 80%;
-}
-
-.personal:hover .commercial {
-  height: 20%;
-  opacity: 0.5;
-}
-.commepersonalrcial:hover .commercial > #video {
-  opacity: 0 !important;
-}
-
-.video {
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1;
-}
-
-.video__split {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  opacity: 0.4;
-  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  left: 50%;
-  transform: translate(-50%);
-}
-
-/* projects */
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.425);
-  padding: 0em;
-  z-index: 5;
-}
-
-header h1 {
-  position: absolute;
-  top: 1em;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-header .mainnav--item {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+.sitenav--item,
+.socialnav--item {
+  font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue,
+    sans-serif;
   font-weight: 700;
-  color:white;
+  color: white;
   position: absolute;
+  text-decoration: none;
 }
 
-header .mainnav--item__left {
+.sitenav--split__left {
   left: 1em;
   top: 1em;
 }
 
-header .mainnav--item__right {
+.sitenav--split__right {
   right: 1em;
   top: 1em;
 }
 
+.socialnav {
+  display: none;
+}
 
 .projects {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding-top: 10vh; */
 }
 
 .project {
@@ -364,19 +353,18 @@ header .mainnav--item__right {
   display: block;
   width: 80vw;
   min-height: 80vh;
-  /* overflow: hidden;   */
   background: black;
   margin: 10vh 0;
   pointer-events: none;
 }
 
-.project:hover .project--overlay  {
+.project:hover .project--overlay {
   background: rgba(0, 0, 0, 0.2);
 }
-.project:hover .video__project  {
+
+.project:hover .project--video {
   transform-origin: center;
   transform: scale(1.2) translate(-40%);
-  
 }
 
 .project .project--content {
@@ -384,13 +372,13 @@ header .mainnav--item__right {
 }
 
 .project--content {
-
   position: sticky;
   position: -webkit-sticky;
   padding: 1rem 25% 1rem 1rem;
   color: white;
-  top:75vh;
+  top: 75vh;
 }
+
 .project--overlay {
   position: absolute;
   top: 0;
@@ -402,17 +390,16 @@ header .mainnav--item__right {
   z-index: 2;
 }
 
-.project--video-container {
+.project--videowrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
 
-.video__project {
+.project--video {
   position: absolute;
   top: 0;
   left: 0;
@@ -423,24 +410,19 @@ header .mainnav--item__right {
   transform: translate(-50%);
   transition: opacity 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
   transition: transform 3.6s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.2s;
-  
-  
 }
 
-
-
-
-
 .project--year {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: -0.05em;
+  font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue,
+    sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
   color: #fff;
 }
 
 .project--title {
-  font-family: "Neue Machina", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+  font-family: 'Neue Machina', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -448,25 +430,61 @@ header .mainnav--item__right {
   color: #fff;
 }
 
-.project--links--item {
-  font-family: "Neue Montreal", -apple-system, BlinkMacSystemFont, Roboto, helvetica neue, sans-serif;
+.project--control {
+  font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue,
+    sans-serif;
   font-weight: 400;
   color: #fff;
   font-size: 1.5rem;
-}
-
-.project--links--item__underline {
   text-decoration: none;
+  margin-right: 0.75rem;
 }
 
+.footer {
+}
+
+.footer--credit {
+  font-family: 'Neue Montreal', -apple-system, BlinkMacSystemFont, Roboto, helvetica neue,
+    sans-serif;
+  text-decoration: none;
+  font-size: 0.8em;
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Tablet */
 @media only screen and (min-width: 768px) {
-  .flex-wrapper {
+  .logo {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+  }
+  .logo--split {
+    display: inline;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .logo--split__left {
+    top: none;
+  }
+  .logo--split__right {
+    left: none;
+    bottom: none;
+  }
+
+  .cover {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .flex-container {
+  .cover--splitscreen {
     display: flex;
     flex-direction: row;
   }
@@ -474,92 +492,91 @@ header .mainnav--item__right {
   .split {
     width: 50%;
     height: 100%;
+    overflow: hidden;
   }
 
-  .commercial h1 {
-    top: 1em;
-    left: auto;
-    right: 1em;
-    transform: translate(0);
-  }
-
-  .commercial:hover {
-    width: 70%;
-    height: 100%;
-  }
-
-  .commercial:hover .personal {
-    width: 30%;
-    height: 100%;
-  }
-
-  .commercial:hover ~ .personal > #video {
-    opacity: 0.1;
-  }
-
-  .personal h1 {
+  .split__personal h1 {
     top: 1em;
     right: auto;
     left: 1em;
     transform: translate(0);
   }
 
-  .personal:hover {
+  .split__commercial:hover {
     width: 70%;
     height: 100%;
   }
 
-  .personal:hover .commercial {
+  .split__commercial:hover .split__personal {
+    width: 30%;
+    height: 100%;
+  }
+
+  .split__commercial:hover ~ .split__commercial > video {
+    /* wat doet dit? */
+    opacity: 0.1;
+  }
+
+  .split__personal:hover {
+    width: 70%;
+    height: 100%;
+  }
+
+  .split__personal:hover .split__commercial {
     width: 30%;
     height: 100%;
     opacity: 0.1;
   }
-  .personal:hover~~.commercial > #video {
+
+  .split__personal:hover ~ .split__commercial > video {
+    /* wat doet dit? */
     opacity: 0.1;
   }
 
-  .video__project {
-    height:100%;
-    width: auto;
-    
-    
+  .project {
+    width: 80vw;
+    min-height: 60vh;
+    margin: 20vh 0;
   }
 
+  .project--video {
+    height: 100%;
+    width: auto;
+  }
+}
 
-
+/* Widescreen */
 @media only screen and (min-width: 1920px) {
-  .flex-wrapper {
+  .cover {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .flex-container {
+  .cover--splitscreen {
     display: flex;
     flex-direction: row;
     max-width: 90vw;
     max-height: 90vh;
   }
 
-  .commercial,
-  .personal {
+  .split__commercial,
+  .split__personal {
     width: 50%;
     height: 100%;
   }
 }
 
-
-}
-
 @media (min-aspect-ratio: 16/9) {
-  .video__project {
+  .project--video {
     width: 100%;
-    height:auto;
+    height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .video__project { 
-      width:auto;
-      height: 100%;
+  .project--video {
+    width: auto;
+    height: 100%;
   }
+}

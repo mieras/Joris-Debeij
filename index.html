@@ -1,38 +1,56 @@
-
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="generator" content="SuperHi">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Joris Debeij</title>
-		<link rel="stylesheet" href="assets/css/base.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-	</head>
-	<body data-barba="wrapper">
-		<script src="/superhi.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet" />
-		
-		<div class="flex-wrapper" data-barba="container" data-barba-namespace="home">
-		  <div class="flex-container">
-		    <div class="split commercial">
-		      <h1 class="logo">Joris</h1>
-		      <h2 class="split__title"><a href="projects.html">Commercial</a></h2>
-		      <video playsinline autoplay muted loop class="video video__split">
-		        <source src="assets/videos/intro-commercial.mp4" type="video/mp4" />
-		      </video>
-		    </div>
-		    <div class="split personal">
-		      <h1 class="logo"> Debeij</h1>
-		      <h2 class="split__title"><a href="projects.html">Personal</a></h2>
-		      <video playsinline autoplay muted loop class="video video__split">
-		        <source src="assets/videos/intro-personal.mp4" type="video/mp4" />
-		      </video>
-		    </div>
-		  </div>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Joris Debeij</title>
+	<link rel="stylesheet" href="assets/css/fonts.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+	<div class="app">
+		<div class="view view__home">
+			<!-- Header -->
+			<header class="header">
+				<h1 class="logo">
+					<a href="/">
+						<span class="logo--split logo--split__left">Joris</span>
+						<span class="logo--split logo--split__right">Debeij</span>
+					</a>
+				</h1>
+			</header>
+
+			<!-- Cover -->
+			<section class="cover">
+				<div class="cover--splitscreen">
+					<!-- Commercial -->
+					<div class="split split__commercial">
+						<h2 class="split--title"><a href="projects.html#commercial">Commercial</a></h2>
+						<video class="split--video split--video__commercial" playsinline autoplay muted loop>
+							<source src="assets/videos/intro-commercial.mp4" type="video/mp4" />
+						</video>
+					</div>
+					<!-- Personal -->
+					<div class="split split__personal">
+						<h2 class="split--title"><a href="projects.html#personal">Personal</a></h2>
+						<video class="split--video split--video__personal" playsinline autoplay muted loop>
+							<source src="assets/videos/intro-personal.mp4" type="video/mp4" />
+						</video>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer class="footer">
+				<p>
+					<a href="" class="footer--credit">by All This</a>
+				</p>
+			</footer>
 		</div>
-		<script src="https://unpkg.com/@barba/core"></script>
-		<script src="assets/js/scripts.js"></script>
-	</body>
+	</div>
+</body>
+
 </html>

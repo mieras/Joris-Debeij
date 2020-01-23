@@ -11,8 +11,11 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body data-barba="wrapper">
-		<script src="/superhi.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet" />
+
+		<!-- The cursor elements --> 
+		<div class="cursor cursor--small"></div>
+		<canvas class="cursor cursor--canvas" resize></canvas>
+		
 		
 		<div class="flex-wrapper" data-barba="container" data-barba-namespace="home">
 		  <div class="flex-container">
@@ -32,7 +35,15 @@
 		    </div>
 		  </div>
 		</div>
+
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 		<script src="https://unpkg.com/@barba/core"></script>
-		<script src="assets/js/scripts.js"></script>
+		<script src="/assets/js/scripts.js"></script>
+		<script src="/assets/js/cursor.js"></script>
 	</body>
+
+	
 </html>

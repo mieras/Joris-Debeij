@@ -17,6 +17,7 @@ body {
   font-size: var(--base-size);
   height: 100%;
   background: var(--color-black);
+  text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: manrope vf;
@@ -600,7 +601,8 @@ body, body a {
 
   .project--content {
     padding: 2rem 25% 2rem 2rem;
-    top:55vh;
+    top:37vh;
+  
   }
 
   .project--year {

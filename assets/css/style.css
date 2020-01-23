@@ -363,6 +363,7 @@ header .mainnav {
   align-items: center;
   /* padding-top: 10vh; */
   margin-bottom:20vh;
+  margin-top:100vh;
 }
 
 .project {
@@ -554,10 +555,11 @@ body, body a {
   
     /* font-weight: 900; */
     font-size:9rem;
-    left:50%;
+    /* left:50%; */
     top:50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(0, -50%); 
     width: 100%;
+    text-align: center;
   }
 
   

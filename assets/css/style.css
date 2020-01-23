@@ -482,6 +482,11 @@ body, body a {
   cursor: none;
  }
 
+ .link:hover {
+   stroke: var(--color-white);
+   transition: all 0.2s ease 0.05s;
+ }
+
 @media only screen and (min-width: 768px) {
   .flex-wrapper {
     display: flex;

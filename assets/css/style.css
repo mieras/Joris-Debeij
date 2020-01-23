@@ -390,7 +390,7 @@ header .mainnav {
   position: -webkit-sticky;
   padding: 2rem 25% 2rem 2rem;
   color: white;
-  top:75vh;
+  top:45vh;
 }
 
 .project--overlay {

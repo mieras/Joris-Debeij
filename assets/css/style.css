@@ -489,6 +489,25 @@ body, body a {
    transition: all 0.2s ease 0.05s;
  }
 
+
+ .mainnav--item__left {
+  position: fixed;
+    top: 50%;
+    left: 4vw;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-50%, 0);
+  }
+
+  .mainnav--item__right {
+    position: fixed;
+    top: 50%;
+    right: 4vw;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translate(50%, 0);
+   }
+
+.active {border-bottom:2px solid #fff;}
+
 @media only screen and (min-width: 768px) {
   .flex-wrapper {
     display: flex;
@@ -569,23 +588,6 @@ body, body a {
   header .mainnav--item {
     font-size: 1rem;
   }
-  .mainnav--item__left {
-  position: fixed;
-    top: 50%;
-    left: 4vw;
-    transform-origin: 0 0;
-    transform: rotate(-90deg) translate(-50%, 0);
-  }
-
-  .mainnav--item__right {
-    position: fixed;
-    top: 50%;
-    right: 4vw;
-    transform-origin: 100% 0;
-    transform: rotate(90deg) translate(50%, 0);
-    }
-
-.active {border-bottom:2px solid #fff;}
 
   .project {
     width: 80vw;

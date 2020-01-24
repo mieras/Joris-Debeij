@@ -506,7 +506,7 @@ body, body a {
     transform: rotate(90deg) translate(50%, 0);
    }
 
-.active {border-bottom:2px solid #fff;}
+.active {border-bottom:1px solid #fff;}
 
 @media only screen and (min-width: 768px) {
   .flex-wrapper {

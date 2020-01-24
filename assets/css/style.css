@@ -199,6 +199,7 @@ The modifier name describes its appearance ("What size?" or "Which theme?" and s
   font-weight: 700;
   font-size: 3em;
   color:white;
+  white-space: nowrap;
 }
 
 .logo__small .logo--part{
